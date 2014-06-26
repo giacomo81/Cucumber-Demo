@@ -24,10 +24,12 @@ public class Guest implements Serializable {
         this.name = name;
         this.signingDate = new Date(System.currentTimeMillis());
     }
- 
+    public String getSigningDate(){
+    	return new Date(System.currentTimeMillis()).toString();
+    }
     // String Representation:
     @Override
     public String toString() {
-        return name + " (signed on " + signingDate + ")";
+        return name + " (signed on date " + signingDate + ")";
     }
 }
