@@ -4,19 +4,14 @@ This is a working Cucumber demo
 Prerequisites 
 -------------
 
-Install Homebrew
-
-    $ http://brew.sh
-
 Install Ruby
 
     $ \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
-Add the following to your bashrc
+Install Homebrew
 
-    $ export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
-    $ export MAVEN_OPTS='-Xms512m -Xmx2048m -XX:PermSize=256m -XX:MaxPermSize=768m'
-
+    $ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    
 Install Maven
 
     $ brew install maven git
